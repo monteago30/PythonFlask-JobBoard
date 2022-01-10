@@ -24,17 +24,15 @@
           <div class="content">
             <p>
               <strong>{{ review['title'] }}</strong>
-              <small>{{ review['status'] }}<small>)
-              <small>{{ review['date'] }}<small>)
+              <small>{{ review['status'] }}</small>
+              <small>{{ review['date'] }}</small>
               {{ review['review'] }}
             </p>
           </div>
         </div>
       </article>
     </div>
-    {# TODO: Remove comment and end for loop
-      {% %}
-    #}
+    {% endfor %}
   <div class="columns">
     <div class="column">
       <a class="button is-info is-pulled-right">Create Review</a>
